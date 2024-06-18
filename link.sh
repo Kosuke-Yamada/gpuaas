@@ -28,3 +28,7 @@ ln -nfs /data ~/data
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install zsh
 zsh
+
+# minicondaのインストール
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+sh Miniconda3-latest-Linux-x86_64.sh
