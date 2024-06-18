@@ -109,3 +109,4 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+export PATH=~/miniconda3/bin:$PATH
