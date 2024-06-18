@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# ドットファイルのシンボリックリンクの作成
 DOT_DIRECTORY="$HOME/gpuaas"
 BACKUP_DIRECTORY="$HOME/.backup/gpuaas"
 
@@ -19,6 +20,9 @@ for f in .??*; do
 done
 
 rmdir -p $BACKUP_DIRECTORY 2>/dev/null
+
+# データのシンボリックリンクの作成
+ln -nfs /data ~/data
 
 # zshのインストール
 sudo apt-get update && sudo apt-get upgrade
