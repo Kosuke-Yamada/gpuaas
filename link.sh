@@ -24,11 +24,11 @@ rmdir -p $BACKUP_DIRECTORY 2>/dev/null
 # データのシンボリックリンクの作成
 ln -nfs /data ~/data
 
+# minicondaのインストール
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+sh Miniconda3-latest-Linux-x86_64.sh
+
 # zshのインストール
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install zsh
 zsh
-
-# minicondaのインストール
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-sh Miniconda3-latest-Linux-x86_64.sh
