@@ -40,7 +40,6 @@ zle_highlight=('paste:none')
 setopt no_beep
 setopt nolistbeep
 
-
 export LANG=ja_JP.UTF-8
 export LC_ALL=ja_JP.UTF-8
 
@@ -108,5 +107,7 @@ else
     fi
 fi
 unset __conda_setup
+conda init zsh
+
 # <<< conda initialize <<<
 export PATH=~/miniconda3/bin:$PATH
