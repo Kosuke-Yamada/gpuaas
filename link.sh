@@ -27,6 +27,7 @@ rmdir -p $BACKUP_DIRECTORY 2>/dev/null
 # zshのインストール
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install zsh
+sudo chsh -s /bin/zsh
 echo "zsh" >>~/.bashrc
 
 # minicondaのインストール
@@ -41,5 +42,3 @@ sudo apt-get install screen
 # gitの設定
 git config --global user.email kosyamada0526@gmail.com
 git config --global user.name Kosuke-Yamada
-
-zsh
