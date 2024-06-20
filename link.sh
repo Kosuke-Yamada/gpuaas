@@ -24,6 +24,12 @@ done
 
 rmdir -p $BACKUP_DIRECTORY 2>/dev/null
 
+# zshのインストール
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install zsh
+echo "zsh" >>~/.bashrc
+zsh
+
 # minicondaのインストール
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 sh Miniconda3-latest-Linux-x86_64.sh
@@ -36,9 +42,3 @@ sudo apt-get install screen
 # gitの設定
 git config --global user.email kosyamada0526@gmail.com
 git config --global user.name Kosuke-Yamada
-
-# zshのインストール
-sudo apt-get update && sudo apt-get upgrade
-sudo apt-get install zsh
-echo "zsh" >>~/.bashrc
-zsh
