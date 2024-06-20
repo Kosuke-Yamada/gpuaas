@@ -1,5 +1,5 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/miniconda3/bin:$PATH
+export PATH="$HOME/bin:/usr/local/bin:$PATH"
+export PATH="$HOME/miniconda3/bin:$PATH"
 
 # history
 export HISTSIZE=1000
@@ -20,7 +20,7 @@ setopt inc_append_history
 # Complement
 autoload -U compinit
 compinit
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+zstyle ':completion:*' matcher-list 'm:\{a-z\}=\{A-Z\}'
 zstyle ':completion:*:default' menu select=2
 setopt auto_param_slash
 setopt auto_pushd
@@ -52,11 +52,11 @@ setopt correct
 stty erase ^H
 bindkey "^[[3~" delete-char
 
-[ -f $HOME/.functions ] && source $HOME/.functions
-[ -f $HOME/.aliases ] && source $HOME/.aliases
+[ -f "$HOME/.functions" ] && source "$HOME/.functions"
+[ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
 
 ### Added by Zinit's installer
-if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
+if [[ ! -f "$HOME"/.zinit/bin/zinit.zsh ]]; then
     print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
     command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
     command git clone https://github.com/zdharma-continuum/zinit "$HOME/.zinit/bin" && \
