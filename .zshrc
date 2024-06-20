@@ -1,5 +1,4 @@
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
-export PATH="$HOME/miniconda3/bin:$PATH"
 
 # history
 export HISTSIZE=1000
@@ -108,7 +107,4 @@ else
     fi
 fi
 unset __conda_setup
-
 # <<< conda initialize <<<
-
-conda init zsh
