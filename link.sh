@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # データのシンボリックリンクの作成
-ln -nfs /data ~/project
+ln -nfs /data $HOME/project
 
 # ドットファイルのシンボリックリンクの作成
 DOT_DIRECTORY="$HOME/gpuaas"
@@ -27,7 +27,7 @@ rmdir -p $BACKUP_DIRECTORY 2>/dev/null
 # zshのインストール
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install zsh
-echo "zsh" >>~/.bashrc
+echo "zsh" >>$HOME/.bashrc
 
 # minicondaのインストール
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
