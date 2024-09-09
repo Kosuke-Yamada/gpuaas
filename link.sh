@@ -30,8 +30,11 @@ sudo apt-get install zsh
 echo "zsh" >>$HOME/.bashrc
 
 # minicondaのインストール
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-sh Miniconda3-latest-Linux-x86_64.sh
+# wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+# sh Miniconda3-latest-Linux-x86_64.sh
+
+# uvのインストール
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # screenのインストール
 sudo apt-get install screen
