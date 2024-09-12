@@ -1,5 +1,9 @@
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
 
+export LC_ALL=ja_JP.UTF-8
+export LANG=ja_JP.UTF-8
+export LANGUAGE=ja_JP.UTF-8
+
 # history
 export HISTSIZE=1000
 export SAVEHIST=1000000
