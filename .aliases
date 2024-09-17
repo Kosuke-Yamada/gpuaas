@@ -11,6 +11,7 @@ alias mv="nocorrect mv -i"
 alias rm="nocorrect rm -i"
 alias ls="nocorrect ls --color"
 alias sl="ls"
+alias hn="homename"
 
 # Replace the default software
 type htop >/dev/null 2>&1 && alias top="htop"
