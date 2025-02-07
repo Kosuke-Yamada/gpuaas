@@ -30,7 +30,7 @@ sudo apt-get install -y zsh
 echo "zsh" >>$HOME/.bashrc
 
 # uvのインストール
-yes | curl -LsSf https://astral.sh/uv/install.sh | sh
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # screenのインストール
 sudo apt-get install -y screen
