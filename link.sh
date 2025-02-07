@@ -42,10 +42,7 @@ git config --global user.name Kosuke-Yamada
 sudo locale-gen ja_JP.UTF-8
 sudo update-locale LANG=ja_JP.UTF-8
 
-test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
-test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.zshrc
-
-cp -r $HOME/project/.ssh $HOME/.ssh
+mkdir -r $HOME/.cache/huggingface
+cp /data/.cache/huggingface/token $HOME/.cache/huggingface/token
 
 zsh
