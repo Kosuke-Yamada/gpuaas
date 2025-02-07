@@ -97,5 +97,3 @@ zstyle :prompt:pure:prompt:success color green
 zstyle :prompt:pure:user color green
 zstyle :prompt:pure:virtualenv color yellow
 ### End of Zinit's installer chunk
-
-. "$HOME/.cargo/env"
