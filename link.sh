@@ -39,6 +39,9 @@ sudo apt-get install -y screen
 git config --global user.email kosyamada0526@gmail.com
 git config --global user.name Kosuke-Yamada
 
+sudo locale-gen ja_JP.UTF-8
+sudo update-locale LANG=ja_JP.UTF-8
+
 cp -r $HOME/project/.ssh $HOME/.ssh
 
 zsh
